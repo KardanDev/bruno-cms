@@ -23,6 +23,12 @@ export const homePage = defineType({
     }),
     defineField({name: 'decorativeSignature', type: 'cmsImage', group: 'hero'}),
     defineField({
+      name: 'introductionBanner',
+      title: 'Introduction banner',
+      type: 'cmsImage',
+      group: 'content',
+    }),
+    defineField({
       name: 'introductionEyebrow',
       title: 'Introduction eyebrow',
       type: 'string',
@@ -42,6 +48,12 @@ export const homePage = defineType({
       rows: 5,
       group: 'content',
       validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'servicesBanner',
+      title: 'Services banner',
+      type: 'cmsImage',
+      group: 'services',
     }),
     defineField({
       name: 'servicesEyebrow',
@@ -77,6 +89,12 @@ export const homePage = defineType({
       of: [defineArrayMember({type: 'reference', to: [{type: 'service'}]})],
     }),
     defineField({
+      name: 'timelineBanner',
+      title: 'Timeline banner',
+      type: 'cmsImage',
+      group: 'atendimento',
+    }),
+    defineField({
       name: 'timelineEyebrow',
       title: 'Timeline eyebrow',
       type: 'string',
@@ -105,6 +123,12 @@ export const homePage = defineType({
       validation: (rule) => rule.min(1),
     }),
     defineField({
+      name: 'valuesBanner',
+      title: 'Values banner',
+      type: 'cmsImage',
+      group: 'content',
+    }),
+    defineField({
       name: 'valuesTitle',
       title: 'Values title',
       type: 'string',
@@ -118,6 +142,12 @@ export const homePage = defineType({
       group: 'content',
       of: [defineArrayMember({type: 'valueItem'})],
       validation: (rule) => rule.min(1),
+    }),
+    defineField({
+      name: 'faqBanner',
+      title: 'FAQ banner',
+      type: 'cmsImage',
+      group: 'content',
     }),
     defineField({
       name: 'faqTitle',
@@ -145,6 +175,12 @@ export const homePage = defineType({
       type: 'array',
       group: 'content',
       of: [defineArrayMember({type: 'faqItem'})],
+    }),
+    defineField({
+      name: 'articlesBanner',
+      title: 'Articles banner',
+      type: 'cmsImage',
+      group: 'content',
     }),
     defineField({
       name: 'articlesTitle',
