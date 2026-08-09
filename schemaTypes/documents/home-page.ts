@@ -29,6 +29,12 @@ export const homePage = defineType({
       group: 'content',
     }),
     defineField({
+      name: 'introductionBannerMobile',
+      title: 'Introduction banner mobile',
+      type: 'cmsImage',
+      group: 'content',
+    }),
+    defineField({
       name: 'introductionEyebrow',
       title: 'Introduction eyebrow',
       type: 'string',
@@ -52,6 +58,12 @@ export const homePage = defineType({
     defineField({
       name: 'servicesBanner',
       title: 'Services banner',
+      type: 'cmsImage',
+      group: 'services',
+    }),
+    defineField({
+      name: 'servicesBannerMobile',
+      title: 'Services banner mobile',
       type: 'cmsImage',
       group: 'services',
     }),
@@ -95,6 +107,12 @@ export const homePage = defineType({
       group: 'atendimento',
     }),
     defineField({
+      name: 'timelineBannerMobile',
+      title: 'Timeline banner mobile',
+      type: 'cmsImage',
+      group: 'atendimento',
+    }),
+    defineField({
       name: 'timelineEyebrow',
       title: 'Timeline eyebrow',
       type: 'string',
@@ -129,6 +147,12 @@ export const homePage = defineType({
       group: 'content',
     }),
     defineField({
+      name: 'valuesBannerMobile',
+      title: 'Values banner mobile',
+      type: 'cmsImage',
+      group: 'content',
+    }),
+    defineField({
       name: 'valuesTitle',
       title: 'Values title',
       type: 'string',
@@ -146,6 +170,12 @@ export const homePage = defineType({
     defineField({
       name: 'faqBanner',
       title: 'FAQ banner',
+      type: 'cmsImage',
+      group: 'content',
+    }),
+    defineField({
+      name: 'faqBannerMobile',
+      title: 'FAQ banner mobile',
       type: 'cmsImage',
       group: 'content',
     }),
@@ -179,6 +209,12 @@ export const homePage = defineType({
     defineField({
       name: 'articlesBanner',
       title: 'Articles banner',
+      type: 'cmsImage',
+      group: 'content',
+    }),
+    defineField({
+      name: 'articlesBannerMobile',
+      title: 'Articles banner mobile',
       type: 'cmsImage',
       group: 'content',
     }),

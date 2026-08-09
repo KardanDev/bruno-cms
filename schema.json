@@ -34,6 +34,14 @@
           "type": "string"
         }
       },
+      "siteLogo": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "cmsImage"
+        },
+        "optional": true
+      },
       "siteName": {
         "type": "objectAttribute",
         "value": {
@@ -211,6 +219,90 @@
           "optional": false
         },
         "href": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": false
+        }
+      }
+    }
+  },
+  {
+    "type": "type",
+    "name": "sanity.imageAsset.reference",
+    "value": {
+      "type": "object",
+      "attributes": {
+        "_ref": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          }
+        },
+        "_type": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string",
+            "value": "reference"
+          }
+        },
+        "_weak": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "boolean"
+          },
+          "optional": true
+        }
+      },
+      "dereferencesTo": "sanity.imageAsset"
+    }
+  },
+  {
+    "name": "cmsImage",
+    "type": "type",
+    "value": {
+      "type": "object",
+      "attributes": {
+        "_type": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string",
+            "value": "cmsImage"
+          }
+        },
+        "asset": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "inline",
+            "name": "sanity.imageAsset.reference"
+          },
+          "optional": true
+        },
+        "media": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "unknown"
+          },
+          "optional": true
+        },
+        "hotspot": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "inline",
+            "name": "sanity.imageHotspot"
+          },
+          "optional": true
+        },
+        "crop": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "inline",
+            "name": "sanity.imageCrop"
+          },
+          "optional": true
+        },
+        "alt": {
           "type": "objectAttribute",
           "value": {
             "type": "string"
@@ -669,90 +761,6 @@
     }
   },
   {
-    "type": "type",
-    "name": "sanity.imageAsset.reference",
-    "value": {
-      "type": "object",
-      "attributes": {
-        "_ref": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "string"
-          }
-        },
-        "_type": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "string",
-            "value": "reference"
-          }
-        },
-        "_weak": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "boolean"
-          },
-          "optional": true
-        }
-      },
-      "dereferencesTo": "sanity.imageAsset"
-    }
-  },
-  {
-    "name": "cmsImage",
-    "type": "type",
-    "value": {
-      "type": "object",
-      "attributes": {
-        "_type": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "string",
-            "value": "cmsImage"
-          }
-        },
-        "asset": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "inline",
-            "name": "sanity.imageAsset.reference"
-          },
-          "optional": true
-        },
-        "media": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "unknown"
-          },
-          "optional": true
-        },
-        "hotspot": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "inline",
-            "name": "sanity.imageHotspot"
-          },
-          "optional": true
-        },
-        "crop": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "inline",
-            "name": "sanity.imageCrop"
-          },
-          "optional": true
-        },
-        "alt": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "string"
-          },
-          "optional": false
-        }
-      }
-    }
-  },
-  {
     "name": "slug",
     "type": "type",
     "value": {
@@ -1035,6 +1043,22 @@
         },
         "optional": false
       },
+      "decorativeSignature": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "cmsImage"
+        },
+        "optional": true
+      },
+      "introductionBanner": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "cmsImage"
+        },
+        "optional": true
+      },
       "introductionEyebrow": {
         "type": "objectAttribute",
         "value": {
@@ -1055,6 +1079,14 @@
           "type": "string"
         },
         "optional": false
+      },
+      "servicesBanner": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "cmsImage"
+        },
+        "optional": true
       },
       "servicesEyebrow": {
         "type": "objectAttribute",
@@ -1107,6 +1139,14 @@
         },
         "optional": true
       },
+      "timelineBanner": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "cmsImage"
+        },
+        "optional": true
+      },
       "timelineEyebrow": {
         "type": "objectAttribute",
         "value": {
@@ -1150,6 +1190,14 @@
         },
         "optional": true
       },
+      "valuesBanner": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "cmsImage"
+        },
+        "optional": true
+      },
       "valuesTitle": {
         "type": "objectAttribute",
         "value": {
@@ -1176,6 +1224,14 @@
               "name": "valueItem"
             }
           }
+        },
+        "optional": true
+      },
+      "faqBanner": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "cmsImage"
         },
         "optional": true
       },
@@ -1220,6 +1276,14 @@
               "name": "faqItem"
             }
           }
+        },
+        "optional": true
+      },
+      "articlesBanner": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "cmsImage"
         },
         "optional": true
       },
@@ -1398,6 +1462,34 @@
         "optional": false
       },
       "contactNote": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "facebookLink": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "instagramLink": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "whatsappLink": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "linkedInLink": {
         "type": "objectAttribute",
         "value": {
           "type": "string"

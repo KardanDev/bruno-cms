@@ -102,6 +102,7 @@ export const pageHero = defineType({
       validation: (rule) => rule.max(300),
     }),
     defineField({name: 'image', title: 'Image', type: 'cmsImage'}),
+    defineField({name: 'imageMobile', title: 'Image Mobile', type: 'cmsImage'}),
     defineField({name: 'cta', title: 'Call to action', type: 'callToAction'}),
   ],
 })
