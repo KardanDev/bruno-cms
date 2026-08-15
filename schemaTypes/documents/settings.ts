@@ -61,6 +61,11 @@ export const settings = defineType({
     defineField({name: 'mapUrl', title: 'Map link', type: 'url'}),
     defineField({name: 'officeHours', title: 'Office hours', type: 'string'}),
     defineField({
+      name: 'newsletterLabel',
+      title: 'Newsletter',
+      type: 'string',
+    }),
+    defineField({
       name: 'socialLinks',
       title: 'Social links',
       type: 'array',

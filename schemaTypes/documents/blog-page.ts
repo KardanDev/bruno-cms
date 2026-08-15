@@ -15,6 +15,7 @@ export const blogPage = defineType({
     }),
     defineField({name: 'articlesBanner', title: 'Articles Banner', type: 'cmsImage'}),
     defineField({name: 'articlesBannerMobile', title: 'Articles Banner Mobile', type: 'cmsImage'}),
+    defineField({name: 'closingCta', title: 'Closing call to action', type: 'pageHero'}),
     defineField({name: 'seo', title: 'SEO', type: 'seo'}),
   ],
 })
