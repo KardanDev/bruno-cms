@@ -7,7 +7,14 @@ export const blogPage = defineType({
   type: 'document',
   icon: DocumentTextIcon,
   fields: [
-    defineField({name: 'hero', title: 'Hero', type: 'pageHero', validation: (rule) => rule.required()}),
+    defineField({
+      name: 'hero',
+      title: 'Hero',
+      type: 'pageHero',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({name: 'articlesBanner', title: 'Articles Banner', type: 'cmsImage'}),
+    defineField({name: 'articlesBannerMobile', title: 'Articles Banner Mobile', type: 'cmsImage'}),
     defineField({name: 'seo', title: 'SEO', type: 'seo'}),
   ],
 })
