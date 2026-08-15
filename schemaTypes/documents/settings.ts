@@ -40,6 +40,16 @@ export const settings = defineType({
       of: [defineArrayMember({type: 'navigationItem'})],
       validation: (rule) => rule.min(1),
     }),
+    defineField({
+      name: 'defaultBackground',
+      title: 'Default background',
+      type: 'cmsImage',
+    }),
+    defineField({
+      name: 'defaultBackgroundMobile',
+      title: 'Default background (mobile)',
+      type: 'cmsImage',
+    }),
     defineField({name: 'phone', title: 'Phone', type: 'string'}),
     defineField({
       name: 'email',
