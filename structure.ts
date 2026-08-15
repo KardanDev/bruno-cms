@@ -21,18 +21,18 @@ export const structure: StructureResolver = (S) =>
   S.list()
     .title('Website content')
     .items([
-      singleton('settings', 'Site settings', CogIcon)(S),
+      singleton('settings', 'Configurações', CogIcon)(S),
       S.divider(),
-      singleton('homePage', 'Home', HomeIcon)(S),
-      singleton('aboutPage', 'About', UserIcon)(S),
-      singleton('blogPage', 'Articles page', DocumentTextIcon)(S),
-      singleton('servicesPage', 'Services page', CaseIcon)(S),
-      singleton('pricingPage', 'Pricing', CreditCardIcon)(S),
-      singleton('faqPage', 'General FAQ', HelpCircleIcon)(S),
-      singleton('contactPage', 'Contact', EnvelopeIcon)(S),
+      singleton('homePage', 'Inicio', HomeIcon)(S),
+      singleton('aboutPage', 'Sobre', UserIcon)(S),
+      singleton('blogPage', 'Artigos', DocumentTextIcon)(S),
+      singleton('servicesPage', 'Atuação', CaseIcon)(S),
+      // singleton('pricingPage', 'Pricing', CreditCardIcon)(S),
+      // singleton('faqPage', 'General FAQ', HelpCircleIcon)(S),
+      singleton('contactPage', 'Contato', EnvelopeIcon)(S),
       S.divider(),
-      S.documentTypeListItem('service').title('Services').icon(CaseIcon),
-      S.documentTypeListItem('post').title('Articles').icon(DocumentTextIcon),
+      S.documentTypeListItem('service').title('Serviços').icon(CaseIcon),
+      S.documentTypeListItem('post').title('Artigos').icon(DocumentTextIcon),
       S.divider(),
       ...S.documentTypeListItems().filter((listItem) => {
         const id = listItem.getId() ?? ''
